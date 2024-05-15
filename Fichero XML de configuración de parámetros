@@ -1,0 +1,48 @@
+<!-- Configuración de la Aplicación Web y Base de Datos -->
+
+<configuracion>
+
+    <!-- Sección de la Base de Datos -->
+    <base_de_datos>
+        <!-- Nombre del servidor donde se encuentra la base de datos -->
+        <host>mi_servidor_bd</host>
+        <!-- Puerto de conexión a la base de datos -->
+        <puerto>5432</puerto>
+        <!-- Nombre de la base de datos -->
+        <nombre_base_de_datos>mi_aplicacion</nombre_base_de_datos>
+        <!-- Nombre de usuario para acceder a la base de datos -->
+        <usuario>mi_usuario_bd</usuario>
+        <!-- Contraseña para acceder a la base de datos -->
+        <contraseña>mi_contraseña_bd</contraseña>
+    </base_de_datos>
+
+    <!-- Sección del Servidor Web -->
+    <servidor_web>
+        <!-- Puerto de escucha del servidor web -->
+        <puerto>8080</puerto>
+        <!-- Habilitar SSL para conexiones seguras (true/false) -->
+        <ssl_habilitado>false</ssl_habilitado>
+        <!-- Ruta al archivo de clave privada para SSL -->
+        <ruta_clave_privada>/ruta/a/clave_privada.pem</ruta_clave_privada>
+        <!-- Ruta al archivo de certificado para SSL -->
+        <ruta_certificado>/ruta/a/certificado.pem</ruta_certificado>
+        <!-- Número máximo de conexiones simultáneas permitidas -->
+        <max_conexiones_simultaneas>100</max_conexiones_simultaneas>
+        <!-- Tiempo de espera de conexión -->
+        <tiempo_espera_conexion>30 segundos</tiempo_espera_conexion>
+    </servidor_web>
+
+    <!-- Sección de Logging -->
+    <logging>
+        <!-- Nivel de log para información general -->
+        <nivel_log>info</nivel_log>
+        <!-- Nivel de log para errores -->
+        <nivel_log>error</nivel_log>
+        <!-- Nivel de log para información detallada de depuración -->
+        <nivel_log>debug</nivel_log>
+        <!-- Ruta al archivo donde se almacenarán los logs -->
+        <ruta_log>/ruta/a/archivo_log.txt</ruta_log>
+    </logging>
+
+</configuracion>
+
